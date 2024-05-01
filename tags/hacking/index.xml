@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacking on Jerryyy's Blog</title><link>https://P5ySm1th.github.io/tags/hacking/</link><description>Recent content in Hacking on Jerryyy's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 Apr 2024 09:00:00 +0000</lastBuildDate><atom:link href="https://P5ySm1th.github.io/tags/hacking/index.xml" rel="self" type="application/rss+xml"/><item><title>PicoCTF 2024</title><link>https://P5ySm1th.github.io/picoctf-2024/</link><pubDate>Fri, 12 Apr 2024 09:00:00 +0000</pubDate><guid>https://P5ySm1th.github.io/picoctf-2024/</guid><description>&lt;img src="https://P5ySm1th.github.io/picoctf-2024/banner.png" alt="Featured image of post PicoCTF 2024" />&lt;h2 id="lời-nói-đầu">
+&lt;a href="#l%e1%bb%9di-n%c3%b3i-%c4%91%e1%ba%a7u">#&lt;/a>
+Lời nói đầu
+&lt;/h2>&lt;p>Sau khi trở về từ PicoCTF 2023 với không thể nào giải được câu cuối thì năm nay lại khác 🤡 Tuy là đã già tới nơi rồi nhưng mà với niềm đam mê chơi Xê tê ép thì năm nay lại thử tham gia lại lần cuối coi như là last dance. PicoCTF năm nay cũng khá hơn năm ngoái (less stegano more fun)&lt;/p>
+&lt;h2 id="scan-surprise">
+&lt;a href="#scan-surprise">#&lt;/a>
+Scan Surprise
+&lt;/h2>&lt;style type="text/css">
+.notice {
+--root-color: #444;
+--root-background: #eff;
+--title-color: #fff;
+--title-background: #7bd;
+--warning-title: #c33;
+--warning-content: #fee;
+--info-title: #fb7;
+--info-content: #fec;
+--note-title: #6be;
+--note-content: #e7f2fa;
+--tip-title: #5a5;
+--tip-content: #efe
+}
+@media (prefers-color-scheme:dark) {
+.notice {
+--root-color: #ddd;
+--root-background: #eff;
+--title-color: #fff;
+--title-background: #7bd;
+--warning-title: #800;
+--warning-content: #400;
+--info-title: #a50;
+--info-content: #420;
+--note-title: #069;
+--note-content: #023;
+--tip-title: #363;
+--tip-content: #121
+}
+}
+body.dark .notice {
+--root-color: #ddd;
+--root-background: #eff;
+--title-color: #fff;
+--title-background: #7bd;
+--warning-title: #800;
+--warning-content: #400;
+--info-title: #a50;
+--info-content: #420;
+--note-title: #069;
+--note-content: #023;
+--tip-title: #363;
+--tip-content: #121
+}
+.notice {
+padding: 18px;
+line-height: 24px;
+margin-bottom: 24px;
+border-radius: 4px;
+color: var(--root-color);
+background: var(--root-background)
+}
+.notice p:last-child {
+margin-bottom: 0
+}
+.notice-title {
+margin: -18px -18px 12px;
+padding: 4px 18px;
+border-radius: 4px 4px 0 0;
+font-weight: 700;
+color: var(--title-color);
+background: var(--title-background)
+}
+.notice.warning .notice-title {
+background: var(--warning-title)
+}
+.notice.warning {
+background: var(--warning-content)
+}
+.notice.info .notice-title {
+background: var(--info-title)
+}
+.notice.info {
+background: var(--info-content)
+}
+.notice.note .notice-title {
+background: var(--note-title)
+}
+.notice.note {
+background: var(--note-content)
+}
+.notice.tip .notice-title {
+background: var(--tip-title)
+}
+.notice.tip {
+background: var(--tip-content)
+}
+.icon-notice {
+display: inline-flex;
+align-self: center;
+margin-right: 8px
+}
+.icon-notice img,
+.icon-notice svg {
+height: 1em;
+width: 1em;
+fill: currentColor
+}
+.icon-notice img,
+.icon-notice.baseline svg {
+top: .125em;
+position: relative
+}
+&lt;/style>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>I&amp;rsquo;ve gotten bored of handing out flags as text. Wouldn&amp;rsquo;t it be cool if they were an image instead?&lt;/p>&lt;/div>
+&lt;p align="center">
+&lt;img src="scan-surprise/flag.png" style="width: 250px; height: 250px;">
+&lt;/p>
+&lt;p>Câu đầu thì hơi xàm =))) mình vẫn không biết pico nó cho cái instance để chi, chỉ cần scan mã QR là ra&lt;/p>
+&lt;h2 id="verify">
+&lt;a href="#verify">#&lt;/a>
+Verify
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 hash and a decrypt script to help you know that my flags are legitimate.&lt;/p>&lt;/div>
+&lt;h2 id="canyousee">
+&lt;a href="#canyousee">#&lt;/a>
+CanYouSee
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>How about some hide and seek?&lt;/p>&lt;/div>
+&lt;h2 id="secret-of-the-polyglot">
+&lt;a href="#secret-of-the-polyglot">#&lt;/a>
+Secret of the Polyglot
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>The Network Operations Center (NOC) of your local institution picked up a suspicious file, they&amp;rsquo;re getting conflicting information on what type of file it is. They&amp;rsquo;ve brought you in as an external expert to examine the file. Can you extract all the information from this strange file?&lt;/p>&lt;/div>
+&lt;h2 id="mob-psycho">
+&lt;a href="#mob-psycho">#&lt;/a>
+Mob psycho
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>Can you handle APKs?&lt;/p>&lt;/div>
+&lt;h2 id="endianness-v2">
+&lt;a href="#endianness-v2">#&lt;/a>
+endianness-v2
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>Here&amp;rsquo;s a file that was recovered from a 32-bits system that organized the bytes a weird way. We&amp;rsquo;re not even sure what type of file it is.&lt;/p>&lt;/div>
+&lt;h2 id="blast-from-the-past">
+&lt;a href="#blast-from-the-past">#&lt;/a>
+Blast from the past
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>The judge for these pictures is a real fan of antiques. Can you age this photo to the specifications? Set the timestamps on this picture to 1970:01:01 00:00:00.001+00:00 with as much precision as possible for each timestamp. In this example, +00:00 is a timezone adjustment. Any timezone is acceptable as long as the time is equivalent. As an example, this timestamp is acceptable as well: 1969:12:31 19:00:00.001-05:00. For timestamps without a timezone adjustment, put them in GMT time (+00:00). The checker program provides the timestamp needed for each.&lt;/p>&lt;/div>
+&lt;h2 id="dear-diary">
+&lt;a href="#dear-diary">#&lt;/a>
+Dear Diary
+&lt;/h2>&lt;div class="notice note" >
+&lt;p class="notice-title">
+&lt;span class="icon-notice baseline">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+&lt;path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+&lt;/svg>
+&lt;/span>Note&lt;/p>&lt;p>If you can find the flag on this disk image, we can close the case for good!&lt;/p>&lt;/div></description></item></channel></rss>
