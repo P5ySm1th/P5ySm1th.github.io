@@ -22,3 +22,12 @@ url = "https://twitter.com/P5yDuck__"
 
 [social.params]
 icon = "brand-twitter"
+
+
+[[social]]
+identifier = "discord"
+name = "Discord"
+url = "https://discordapp.com/users/672816716878970891"
+
+[social.params]
+icon = "brand-discord"
